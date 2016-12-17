@@ -1,0 +1,9 @@
+language: python
+python:
+  - '3.5'
+install:
+  - pip install --upgrade tox setuptools coveralls
+script:
+  - python -m tox
+after_success:
+  - coveralls
